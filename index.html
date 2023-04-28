@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shehan Samarasena</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a8208ca05c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo1.png" class="logo"> -->
+                <ul id="sideMenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Services</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello!</p>
+                <h1>I'm Shehan Samarasena</h1>
+                <h2>Developer</h2>
+            </div>
+            <button onclick="scrollToSection('about');" class="know-more">Know More</button>
+        </div>
+ </div>
+ <!-- -----------about-------------->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I graduated from University of Colombo (Sri Lanka) with a Bachelors in Business Economics in 2018, after which, I worked as an Mangement Information Systems Analyst at Moody’s Analytics Knowledge Services in Sri Lanka for 2 years. After that I wanted to change my career to the software development, hence, I started a masters degree in information technology at Friedrich Alexander University of Erlangen-Nuremberg. In there, I got exposed to both theoretical and practical aspects of software engineering concepts and technologies.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-end Development</span><br>Javascript <br>HTML/CSS</li>
+                        <li><span>Back-end Development</span><br>Python <br>C <br>Node.js <br>Express.js</li>
+                        <li><span>Programming Tools/Frameworks</span><br>Git/GitLab/GitHub <br>React<br>Cognigy</li>
+                    </ul>
+                </div> 
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>April 2019 - September 2019</span><br>MIS Associate at Moody's Analytics</li>
+                        <li><span>Oct 2017 - March 2019</span><br>MIS Analyst at Moody's Analytics</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020 - Present</span><br>Master’s in International Information Systems at Friedrich Alexander University of Erlangen-Nuremberg</li>
+                        <li><span>2014 - 2018</span><br>Bachelor’s in Business Administration at University of Colombo</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+ <!-- ---------------Services------------------------- 
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Front-end Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, saepe vero. Aut fugit quis dignissimos tempora sed dolorum quisquam libero magnam eius? Quibusdam molestiae rerum fugit ab tenetur, suscipit praesentium?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, saepe vero. Aut fugit quis dignissimos tempora sed dolorum quisquam libero magnam eius? Quibusdam molestiae rerum fugit ab tenetur, suscipit praesentium?</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Back-end Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, saepe vero. Aut fugit quis dignissimos tempora sed dolorum quisquam libero magnam eius? Quibusdam molestiae rerum fugit ab tenetur, suscipit praesentium?</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div> -->
+
+ <!-- -------------------Portfolio------------------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <h3 class="portfolio-heading">Blog Project</h3>
+                <img src="images/LA.png">
+                <div class="layer">
+                    <h3>LocalAthlete Blog Project</h3>
+                    <p>This is a news blog website I built using HTML CSS and JavaScript. Still a work in progress project.</p>
+                    <a href="https://github.com/ShehanCodes/local-athlete-blog.git"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h3 class="portfolio-heading">Chatbot Project</h3>
+                <img src="images/chatbot.png">
+                <div class="layer">
+                    <h3>Chatbot</h3>
+                    <p>Chatbot project developed for the FAU website using the Cognigy coding platform. The main use case was a new student joining the university and going on about her issues when getting relavant information from FAU website and its different kinds of portals. This chatbot will address different student needs related to their program structure, accommodation, transport, health insurance or so by providing reliable answers from FAU databases.</p>
+                    <a href="https://webchat-trial.cognigy.ai/v2/537c3d68f75826358d4dc97f14bc5d5b9d4b0e0a5e47baaae49d3ef6580fedc5"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h3 class="portfolio-heading">Portfolio Website</h3>
+                <img src="images/portfolio.png">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>This is my portfolio website which I built from scracth using HTML CSS and JavaScript</p>
+                    <a href="https://github.com/ShehanCodes/my-portfolio-website.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <h3 class="portfolio-heading">Billing System</h3>
+                <img src="images/bill.png">
+                <div class="layer">
+                    <h3>Restaurant Billing System</h3>
+                    <p>This is a restaurant bill generator which allows the user to enter customer name and the items that were bought. This was built using C.</p>
+                    <a href="https://github.com/ShehanCodes/billing-system.git"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h3 class="portfolio-heading">Sorting Visualizer</h3>
+                <img src="images/sort.png">
+                <div class="layer">
+                    <h3>Sorting Visualizer</h3>
+                    <p>This is a basic bubble sort visualizer built using JavaScript, HTML and CSS</p>
+                    <a href="https://github.com/ShehanCodes/sorting-visualizer.git"><i class="fa-brands fa-github"></i></a>
+                    <a href="http://127.0.0.1:5502/index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <h3 class="portfolio-heading">Portfolio Website</h3>
+                <img src="images/rock.png">
+                <div class="layer">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <p>The rock paper scissors game developed using html JavaScript and css</p>
+                    <a href="https://github.com/ShehanCodes/rock-paper-scissors.git"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+
+ <!-- -------------------Contact--------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>shehanakalankas@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>015221449074</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/shehansamarasena/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ShehanCodes"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Shehan-Samarsena.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">.</span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>© Shehan Samarasena. All rights reserved.</p>
+    </div>
+ </div>
+
+ <script>
+
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    function openTab(tabName){
+        for(tabLink of tabLinks){
+            tabLink.classList.remove("active-link");
+        }
+        for(tabContent of tabContents){
+            tabContent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabName).classList.add("active-tab");
+    }
+
+ </script>
+
+ <script>
+
+    var sideMenu = document.getElementById("sideMenu");
+
+    function openMenu(){
+        sideMenu.style.right = "0";
+    }
+    function closeMenu(){
+        sideMenu.style.right = "-200px";
+    }
+
+ </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPmyY9xg_4EbGBvvQT1uqoZD5yeB5BUWBKaphIRjn2q7NH_EvwMOEwCZZcnOTqpmY-/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML ="Thank you for getting in touch!";
+            setTimeout(function(){
+                msg.innerHTML = "";
+            }, 500);
+            form.reset();
+
+        })
+        .catch(error => console.error('Error!', error.message));
+    })
+</script>
+
+<script>
+    function scrollToSection(sectionId) {
+        var section = document.getElementById(sectionId);
+        section.scrollIntoView({behavior: "smooth"});
+}
+</script>
+
+</body>
+</html>
