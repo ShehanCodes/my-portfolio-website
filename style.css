@@ -226,12 +226,15 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    aspect-ratio: 1; /* Ensure the container is square */
 }
 .work img{
     width: 100%;
+    height: 100%; /* Set a fixed height */
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+    object-fit: cover; /* Ensure the image covers the container */
 }
 .layer{
     width: 100%;
