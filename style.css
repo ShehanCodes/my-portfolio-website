@@ -226,7 +226,8 @@ nav ul li a:hover::after{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    aspect-ratio: 1; /* Ensure the container is square */
+    width: 100%; /* Ensure the container takes full width */
+    aspect-ratio: 1 / 1; /* Ensure the container is square */
 }
 .work img{
     width: 100%;
